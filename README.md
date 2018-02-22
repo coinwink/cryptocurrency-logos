@@ -4,7 +4,7 @@ Coinmarketcap.com states that they allow to use any kind of content from their w
 
 After the latest change yesterday, now it is particularly difficult to get coin logos from CMC. Before all logos were named according to coin IDs. Now they are named according to the internal CMC IDs.
 
-That is why I have created a PHP script that will automatically download all logos from CMC.<br>
+That is why today I have created a PHP script that automatically downloads all logos from CMC.
 
 How does it work?
 1. Using the CMC API, the script gets data for all coins in order to get public IDs for each coin
@@ -12,6 +12,8 @@ How does it work?
 3. Then it fetches HTML data from these links for each coin
 4. Parses through HTML to find CMC coin IDs
 5. Downloads all logos using CMC IDs and renames them using the public coin IDs
+<br>
+This solution was originally built for https://coinwink.com
 <br>
 
 # Logos (16x16 px)
