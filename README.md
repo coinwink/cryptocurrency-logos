@@ -13,8 +13,6 @@ How does it work?
 4. Parses through HTML to find CMC coin IDs
 5. Downloads all logos using CMC IDs and renames them using the public coin IDs
 <br>
-This solution was originally built for https://coinwink.com
-<br>
 
 # Logos (16x16 px)
 
