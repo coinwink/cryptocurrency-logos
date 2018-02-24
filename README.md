@@ -12,7 +12,13 @@ How does it work?
 3. Then it fetches HTML data from these links for each coin
 4. Parses through HTML to find CMC coin IDs
 5. Downloads all logos using CMC IDs and renames them using the public coin IDs
-<br>
+
+Logo files are renamed to coin IDs (e.g. bitcoin-cash) because coin symbols (e.g. BCH) are not unique. For example there are two coins with the same NET symbol. There are also other coins that share single symbol.
+
+Another option would be to use coin names, but they change more otten than IDs. For example, before 'Golem' was named as 'Golem Network Tokens'. The name changed but the ID is still the old one (golem-network-tokens).
+
+So IDs are the most reliable. Still, there are some some rare cases when ID change together with the name, as it was recently when Raiblocks changed to Nano.
+<br><br>
 This solution was originally built for https://coinwink.com
 <br>
 
