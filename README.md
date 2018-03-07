@@ -8,7 +8,7 @@ In this repository you will find two methods for retrieving logos from CMC with 
 
 METHOD 1
 
-1_get_logos_16x16.php
+1_get_logos_16x16.php<br>
 1_get_logos_32x32.php
 
 This method is possible because of the unlisted CMC API that was discovered by @cbellucci (https://files.coinmarketcap.com/generated/search/quick_search.json).
@@ -17,7 +17,7 @@ This is a lightweight solution, when compared with the 2nd method. Although it i
 <br><br>
 METHOD 2
 
-2_get_logos_16x16.php
+2_get_logos_16x16.php<br>
 2_get_logos_32x32.php
 
 This method has no delay, but it requires much more processing power, as it fetches all individual pages and parses through them to extract coin IDs.
@@ -29,6 +29,7 @@ How does it work?
 4. Parses through HTML to find CMC coin IDs
 5. Downloads all logos using CMC IDs and renames them using the public coin IDs
 <br><br>
+<br>
 Logo files are renamed to coin IDs (e.g. bitcoin-cash) because coin symbols (e.g. BCH) are not unique. For example there are two coins with the same NET symbol. There are also other coins that share single symbol.
 
 Another option would be to use coin names, but they change more otten than IDs. For example, before 'Golem' was named as 'Golem Network Tokens'. The name changed but the ID is still the old one (golem-network-tokens).
