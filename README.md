@@ -1,24 +1,26 @@
 # Cryptocurrency logos from Coinmarketcap.com
 
-Coinmarketcap.com states that they allow to use any kind of content from their website: https://coinmarketcap.com/faq/
+Coinmarketcap.com states that they allow using any content from their website: https://coinmarketcap.com/faq/
 
-After the latest change on Feb 21 2018, now it is particularly difficult to get coin logos from CMC. Before all logos were named according to coin IDs. Now they are named according to the internal CMC IDs.
+After the latest change on Feb 21, 2018, now it is particularly difficult to get coin logos from CMC. Before all logos were named according to coin IDs, now they are named according to internal CMC IDs.
 
-In this repository you will find two methods for retrieving logos from CMC with the correct coin IDs.
+In this repository, you will find two methods for retrieving logos from CMC with the correct coin IDs.
+<br>
+<br>
+**METHOD 1**
 
-METHOD 1
-
-1_get_logos_16x16.php<br>
-1_get_logos_32x32.php
+*1_get_logos_16x16.php*  
+*1_get_logos_32x32.php*
 
 This method is possible because of the unlisted CMC API that was discovered by @cbellucci (https://files.coinmarketcap.com/generated/search/quick_search.json).
 
-This is a lightweight solution, when compared with the 2nd method. Although it is not clear how frequently the API updates. It seems that there is at least a 5 days delay.
-<br><br>
-METHOD 2
+This is a lightweight solution when compared with the 2nd method, although it is not clear how frequently the API updates. It seems that there is at least a five days delay.
+<br>
+<br>
+**METHOD 2**
 
-2_get_logos_16x16.php<br>
-2_get_logos_32x32.php
+*2_get_logos_16x16.php*  
+*2_get_logos_32x32.php*
 
 This method has no delay, but it requires much more processing power, as it fetches all individual pages and parses through them to extract coin IDs.
 
@@ -28,14 +30,16 @@ How does it work?
 3. Then it fetches HTML data from these links for each coin
 4. Parses through HTML to find CMC coin IDs
 5. Downloads all logos using CMC IDs and renames them using the public coin IDs
-<br><br>
-<br>
-Logo files are renamed to coin IDs (e.g. bitcoin-cash) because coin symbols (e.g. BCH) are not unique. For example there are two coins with the same NET symbol. There are also other coins that share single symbol.
 
-Another option would be to use coin names, but they change more otten than IDs. For example, before 'Golem' was named as 'Golem Network Tokens'. The name changed but the ID is still the old one (golem-network-tokens).
+<br>
+<br>
+Downloaded logo files are renamed to coin IDs (e.g., bitcoin-cash) because coin symbols (e.g., BCH) are not unique. For example, there are two coins with the same NET symbol. There are also other coins that share single symbol.
+
+Another option would be to use coin names, but they change more often than IDs. For example, before 'Golem' was named as 'Golem Network Tokens'. The name changed, but the ID is still the old one (golem-network-tokens).
 
 So IDs are the most reliable. Still, there are some rare cases when ID change together with the name, as it was recently when Raiblocks changed to Nano.
-<br><br>
+<br>
+<br>
 This solution was originally built for https://coinwink.com
 <br>
 
