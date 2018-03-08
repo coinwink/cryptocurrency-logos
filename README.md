@@ -15,8 +15,8 @@ In this repository, you will find two methods for retrieving logos from CMC with
 This method is possible because of the unlisted CMC API that was discovered by @cbellucci (https://files.coinmarketcap.com/generated/search/quick_search.json).
 
 This is a lightweight solution when compared with the 2nd method, although it is not clear how frequently the API updates. It seems that there is at least a five days delay.
-<br>
-<br>
+
+
 **METHOD 2**
 
 *2_get_logos_16x16.php*  
@@ -36,6 +36,7 @@ Downloaded logo files are renamed to coin IDs (e.g., bitcoin-cash) because coin 
 <br>
 <br>
 This solution was originally built for https://coinwink.com
+<br>
 <br>
 
 # Logos (16x16 px)
