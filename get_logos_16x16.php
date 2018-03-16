@@ -2,7 +2,7 @@
 
 // Get data for all coins from Coinmarketcap API
 $ch = curl_init(); 
-curl_setopt($ch, CURLOPT_URL, "https://files.coinmarketcap.com/generated/search/quick_search.json"); 
+curl_setopt($ch, CURLOPT_URL, "https://s2.coinmarketcap.com/generated/search/quick_search.json"); 
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
 $output = curl_exec($ch); 
 curl_close($ch);
@@ -26,11 +26,11 @@ foreach ($outputdecoded as $coin) {
     echo($pubid);
 
     // Using the CMC ID build the link for logo
-    $file_url = "https://files.coinmarketcap.com/static/img/coins/32x32/" . $cmcid . ".png";
+    $file_url = "https://s2.coinmarketcap.com/static/img/coins/16x16/" . $cmcid . ".png";
 
     // Get file logo, rename it and save
     $image = file_get_contents($file_url);
-    $img_path = "coins/32x32/" . $pubid . ".png";
+    $img_path = "coins/16x16/" . $pubid . ".png";
     file_put_contents($img_path, $image);
 }
 
