@@ -6,7 +6,7 @@ After the latest change on Feb 21, 2018, now it is particularly difficult to get
 
 A PHP script provided here retrieves all logos with their correct names.
 
-Alternatively, you can just download all logos from the Coins folder. Please do not link directly to the logos provided in this repository. Logos last updated: Mar 18, 2018.
+Alternatively, you can just download all logos from the Coins folder. Please do not link directly to the logos provided in this repository. Logos last updated: Mar 8, 2018.
 
 Downloaded logo files are renamed to coin IDs (e.g., bitcoin-cash) because coin symbols (e.g., BCH) are not unique. For example, there are two coins with the same NET symbol. There are also other coins that share single symbol. Another option would be to use coin names, but they change more often than IDs. For example, before 'Golem' was named as 'Golem Network Tokens'. The name changed, but the ID is still the old one (golem-network-tokens). So IDs are the most reliable. Still, there are some rare cases when ID change together with the name, as it was recently when Raiblocks changed to Nano.
 <br>
