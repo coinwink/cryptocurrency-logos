@@ -1,3 +1,6 @@
+New project: [High Quality Crypto Logos](https://cryptoclothing.cc/crypto-logos)
+<br>
+<br>
 # Cryptocurrency logos from Coinmarketcap.com
 
 Coinmarketcap.com states that they allow using any content from their website: https://coinmarketcap.com/faq/
