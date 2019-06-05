@@ -1,4 +1,4 @@
-New project: [High Quality Crypto Logos](https://cryptoclothing.cc/crypto-logos)
+Check the new project: [Crypto Logos](https://cryptoclothing.cc/crypto-logos)
 <br>
 <br>
 # Cryptocurrency logos from Coinmarketcap.com
