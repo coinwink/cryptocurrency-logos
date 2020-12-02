@@ -5,7 +5,7 @@
 $i = 1;
 $string = "";
 while ($i < 7848) {
-    $string .= "(coins/16x16/".$i.".png) ";
+    $string .= "![".$i."](coins/16x16/".$i.".png) ";
     $i++;
 }
 
