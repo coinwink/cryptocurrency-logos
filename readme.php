@@ -4,8 +4,8 @@
 
 $i = 1;
 $string = "";
-while ($i < 7848) {
-    $string .= "![".$i."](coins/32x32/".$i.".png) ";
+while ($i < 7849) {
+    $string .= "![".$i."](coins/16x16/".$i.".png) ";
     $i++;
 }
 
