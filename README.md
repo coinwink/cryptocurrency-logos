@@ -2,11 +2,15 @@
 
 In this repository, you will find all cryptocurrency logos that are available on [CoinMarketCap](https://coinmarketcap.com).
 
-Currently, there are 7848 different logos. All logos are in PNG format, in the following three dimensions: 16x16, 32x32, 128x128 px.
+Currently, there are 8030 different logos. All logos are in PNG format, in the following three dimensions: 16x16, 32x32, 128x128 px.
+
+Below, in this README file are presented only those logos that are currently active on CoinMarketCap. Their slugs (names) are visible in the `alt` tag of each logo. Out of the total 8030 cryptocurrencies, currently are active only 4046.
+
+Other 3984 logos, available in this repository but not visible in the readme below, are for coins and tokens that can be considered "dead" (speaking in cryptocurrency terms).
 
 Logos are named according to their CoinMarketCap id, where the Bitcoin id is `1`, and all other coins get their ids incrementally according to the date they were added to CMC.
 
-To download new logos, run the PHP script. If there are no new logos available, the script simply replaces the last 10 attempted logos with the placeholder image. In any case, the last 10 logos are always overwritten.
+To download new logos, run the PHP script for your desired logo dimensions. If there are no new logos available, the script simply replaces the last 10 attempted logos with the placeholder image. In any case, the last 10 logos are always overwritten.
 
 Some logos on CMC return an error. In such a case, the script replaces the missing logo with the placeholder image from the `dummy` folder.
 
