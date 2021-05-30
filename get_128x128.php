@@ -1,6 +1,6 @@
 <?php
 
-set_time_limit(3600);
+set_time_limit(7200);
 
 $i = 1;
 // $i = 7700;
@@ -12,11 +12,11 @@ if (sizeof($files) > 2) {
             $i = (int)$file;
         }
     }
-    $i = $i - 10;
+    $i = $i - 20;
 }
 
 $errors = 0;
-while ($i < 9000) {
+while ($i < 11000) {
 
     // Using the CMC ID build the link for logo
     $file_url = "https://s2.coinmarketcap.com/static/img/coins/128x128/" . $i . ".png";
@@ -38,14 +38,14 @@ while ($i < 9000) {
     else {
         $errors = 0;
     }
-    
-    if ($errors == 10) {
-        $i = 10000;
+
+    if ($errors == 20) {
+        $i = 100000;
     }
     else {
-        $i++;   
+        $i++;
     }
-    
+
 }
 
 
